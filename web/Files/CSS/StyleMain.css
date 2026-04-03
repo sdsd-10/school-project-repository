@@ -102,14 +102,13 @@ body {
     border-bottom-right-radius:5px;
     border-bottom-left-radius:5px;
     box-shadow: 0 0 20px black;
-
-    .userimg{
-        scale: 0.2;
-        position: absolute;
-        top: -275px;
-        right: -130px;
-    }
  }
+.user .userimg{
+    scale: 0.2;
+    position: absolute;
+    top: -275px;
+    right: -130px;
+}
 
  
 canvas {
