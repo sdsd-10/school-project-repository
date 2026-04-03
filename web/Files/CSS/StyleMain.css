@@ -57,6 +57,9 @@ body {
     border-bottom-left-radius:15px;
     z-index:10;
     box-shadow: 0 0 40px rgba(0, 0, 0, 1);
+    max-height: 60vh;
+    overflow-y: auto;
+    scrollbar-gutter: stable;
 }
 
 /* tab content header */
@@ -119,4 +122,22 @@ canvas {
     width: 100vw;
     height: 100vh;
     z-index: 9;
+}
+
+.mytabs .tab::-webkit-scrollbar {
+    width: 12px;
+}
+
+.mytabs .tab::-webkit-scrollbar-track {
+    background: #d8e0b5;
+    border-radius: 10px;
+}
+
+.mytabs .tab::-webkit-scrollbar-thumb {
+    background: #283996;
+    border-radius: 10px;
+}
+
+.mytabs .tab::-webkit-scrollbar-thumb:hover {
+    background: #260980;
 }
