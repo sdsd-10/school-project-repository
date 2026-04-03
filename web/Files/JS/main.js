@@ -21,7 +21,7 @@ function Loginfunc(){
         if(username == getCookie("username") && password == getCookie("password"))
         {
             //SEND TO WEBSiTE
-            window.location.assign("indexMain.html")
+            window.location.assign("index.html")
             alert("Enter website");
         }
         else
