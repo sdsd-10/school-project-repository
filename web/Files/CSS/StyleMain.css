@@ -1,0 +1,123 @@
+/* the body */
+body {
+    display:flex;
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle, #5c3e94 0%, #412b6b 37%, #211832 80%);
+    background-attachment: fixed;
+    background-size:cover;
+    justify-content:center;
+    align-content:center;
+    font-family: "Roboto", sans-serif;
+}
+
+.form-container {
+    width: 100%;
+    padding: 100px 40px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+/* the whole thing? */
+.mytabs {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px;
+    color: #ffffff;
+}
+
+/* the circular buttons we're just hiding them */
+.mytabs input[type=radio] {
+    display: none;
+}
+
+/* tab button i think */
+.mytabs label {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 25px 200px;
+    background: #283996;
+    transform: translateY(+13px);
+    font-weight: bold;
+    border-top-right-radius:10px;
+    border-top-left-radius:10px;
+    z-index:10;
+}
+
+/* the tab content + some stuff if off */
+.mytabs .tab {
+    width: 100%;
+    padding: 40px;
+    background: #F6FFD2;
+    order: 1;
+    display: none;
+    border-top-right-radius:15px;
+    border-top-left-radius:15px;
+    border-bottom-right-radius:15px;
+    border-bottom-left-radius:15px;
+    z-index:10;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 1);
+}
+
+/* tab content header */
+.mytabs .tab h2 {
+    font-size: 3em;
+}
+
+/* i think tab content if clicked */
+.mytabs input[type=radio]:checked + label + .tab {
+    display: block;
+}
+
+/* tab button when hovering */
+.mytabs input[type=radio] + label {
+    cursor: pointer;
+}
+
+/* same as before but clicking */
+.mytabs input[type=radio]:checked + label {
+    transform: translateY(-1px);
+    background: #260980;
+    transition: 0.3s;
+    padding: 25px 200px ;
+}
+
+
+.tab{
+    color: #3AA3C1;
+}
+
+.user{
+    order: -1;
+    width: 200px;
+    height: 50px;
+    background-color: #283996;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    border-top-right-radius:5px;
+    border-top-left-radius:5px;
+    border-bottom-right-radius:5px;
+    border-bottom-left-radius:5px;
+    box-shadow: 0 0 20px black;
+
+    .userimg{
+        scale: 0.2;
+        position: absolute;
+        top: -275px;
+        right: -130px;
+    }
+ }
+
+ 
+canvas {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9;
+}
