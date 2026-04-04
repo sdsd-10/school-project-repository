@@ -1,5 +1,5 @@
 /* the body */
-body {
+body { 
     display:flex;
     margin: 0;
     padding: 0;
@@ -13,7 +13,7 @@ body {
 
 .form-container {
     width: 100%;
-    padding: 100px 40px;
+    padding: 5em 4em;
     border-radius: 30px;
     text-align: center;
 }
